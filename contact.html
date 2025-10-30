@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – Binlor</title>
+    <meta name="description" content="Contactez l'équipe Binlor pour une démo ou un devis.">
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#7c3aed" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="Logo Binlor" width="40" height="40" />
+          <span>Binlor</span>
+        </a>
+        <nav id="menu" class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="services.html">Services</a>
+          <a href="realisations.html">Réalisations</a>
+          <a href="a-propos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+          <div class="nav-auth">
+            <a href="#" class="btn btn-primary btn-sm">Connexion</a>
+          </div>
+        </nav>
+        <div class="header-auth">
+          <a href="#" class="btn btn-primary btn-sm">Connexion</a>
+        </div>
+        <button class="nav-toggle" aria-controls="menu" aria-expanded="false">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-slide">
+        <div class="hero-content">
+          <div class="container">
+            <h2>Contact</h2>
+            <p>Parlez-nous de votre projet. Nous reviendrons vers vous très rapidement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white">
+        <div class="container">
+          <div class="contact-inner">
+            <div>
+              <h2>Coordonnées</h2>
+              <p>Expliquez votre contexte, vos objectifs et vos contraintes. Notre équipe vous répondra sous 24h.</p>
+              <ul class="contact-list">
+                <li>Email : <a href="mailto:contact@binlor.app">contact@binlor.ci</a></li>
+              </ul>
+            </div>
+            <form class="contact-form" action="mailto:contact@binlor.app" method="post" enctype="text/plain">
+              <label>Nom complet</label>
+              <input type="text" name="name" required />
+              
+              <label>Email</label>
+              <input type="email" name="email" required />
+              
+              <label>Message</label>
+              <textarea name="message" rows="6" required></textarea>
+              
+              <button class="btn btn-primary btn-lg" type="submit">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Binlor. Tous droits réservés</p>
+        <nav class="footer-nav">
+          <a href="a-propos.html">À propos</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+          <a href="#">Mentions légales</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
